@@ -129,7 +129,6 @@ section {
   transition-property: fill, color;
   transition-duration: 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .navigation-item:not(:last-child) {
@@ -202,7 +201,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
-  width: 1600px;
+  /* width: 1600px; */
   height: 450px;
   margin: auto auto 50px;
 }  
@@ -356,7 +355,7 @@ section {
 
 .section3 .container ul {
   display: flex;
-  justify-content: space-around; 
+  justify-content: center; 
 }
 
 .social-media-icons {
@@ -523,7 +522,8 @@ section {
   display: block;
   width: 44px;
   height: 44px;
-  background-color: #fff;
+   /* background-color: #fff; */
+   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -540,7 +540,7 @@ section {
   align-items: center;
 }
 
-.footer-social-media-icons-icon:hover {
+.footer-social-media-icons-icon {
   fill: #fff;
 }
 
@@ -559,6 +559,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .modal{
@@ -587,6 +588,8 @@ section {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 1.5s cubic-bezier(0.19, 1, 0.22, 1),
+  visibility 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 /* ====== END BACKDROP ======= */
 
